@@ -1,0 +1,14 @@
+<h2>Hello World, I am in home page.</h2><br>
+
+Hello {{name}}, your age is {{age}}.<br>
+
+Education:<br>
+{% if education %}
+    {% for each in education %}
+        You completed your {{each.type}} at {{each.name}} with {{each.percent}}%<br>
+    {% endfor %}
+{% else %}
+<h2> Details not provided</h2>
+{% endif %}
+<br>
+Thank you {{name}}.
